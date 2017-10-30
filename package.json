@@ -1,0 +1,25 @@
+{
+  "name": "landing-example1",
+  "version": "1.0.0",
+  "description": "landing-example1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-uglify": "^3.0.0",
+    "postcss-cssnext": "^3.0.2",
+    "rimraf": "^2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limon153/Landing-Template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/limon153/Landing-Template/issues"
+  },
+  "homepage": "https://github.com/limon153/Landing-Template#readme"
+}
