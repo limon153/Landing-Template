@@ -5,9 +5,13 @@
   --accent-color: #11749e;
 }
 
-body {
-  margin: 0;
+html {
   font-size: 16px;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,6 +19,10 @@ a {
   text-decoration: none;
   color: #fff;
   
+}
+
+nav#my-menu {
+  font-size: 2.3rem;
 }
 
 .header {
@@ -30,19 +38,23 @@ a {
     width: 100%;
     height: var(--header-nav-height);
     border-bottom: solid color(#787878 alpha(38%)) 2px;
+    
+    & .header-logo {
+      margin: auto 0;
+      position: absolute;
+      width: 70px;
+      top: 0;
+      bottom: 0;
+      left: 200px;
+    }
     & .header-menu {
       display: flex;
-      width: 80%;
       height: 100%;
       margin: 0 auto;
       padding: 0;
       justify-content: center;
 
-      & .header-logo {
-        width: 70px;
-        margin: auto 0;
-      }
-      & a:nth-child(2) {
+      & a:nth-child(1) {
         margin-left: 80px;
       }
       & a:hover {
@@ -61,18 +73,31 @@ a {
         transition: border-width .3s ease, color .3s ease;
       }        
     }
+    & button.hamburger {
+      display: none;
+      position: absolute;
+      width: 100px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      outline: none;
+      & .hamburger-inner, & .hamburger-inner::before, & .hamburger-inner::after {
+        background-color: #fff;
+      }
+    }
   }
+
 
   & .heading {
     margin: auto;
     text-align: center;
     text-transform: uppercase;    
     & h1 {
-      font-size: 130px;
-      margin-bottom: 0;
+      font-size: 9rem;
+      margin: 0;
     }
     & p {
-      font-size: 18px;
+      font-size: 1.3rem;
       letter-spacing: 15px;
       color: var(--accent-color);
       font-weight: 900;
@@ -88,7 +113,7 @@ a {
     bottom: 20px;
     text-align: center;
     & span {
-      font-size: 14px;
+      font-size: 0.9rem;
       
     }
     & i {

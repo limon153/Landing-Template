@@ -4,36 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/1549e91f29.js"></script>
+  <!-- Bootstrap + Mmenu css + Hamburger -->
+  <link rel="stylesheet" href="css/libs.min.css">
+  <!-- Mmenu js -->
+  <script src="js/libs.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>Document</title>
 </head>
-<body>
-  <header class="header">
-    <div class="header-top">
-      <nav class="header-menu">
+<body background="#000">
+<div id="my-page">
+  <div id="my-header">
+    <header class="header">
+      <div class="header-top">
         <img src="img/logo.png" alt="header logo" class="header-logo">
-        <a href="#">Home</a>
-        <a href="#">Pages</a>
-        <a href="#">Features</a>
-        <a href="#">Extensions</a>
-        <a href="#">Tutorials</a>
-        <a href="#">Contact us</a>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-skype"></a>
-        <a href="#" class="fa fa-linkedin"></a>
-      </nav>
-    </div>
-    <div class="heading">
-      <h1>Creatives</h1>
-      <p>Power by PSDfreebies.com</p>
-    </div>
-    <div class="scroll-down">
-      <span>Scroll Down</span>
-      <i class="fa fa-chevron-down"></i>
-    </div>
-  </header>
+        <nav class="header-menu">
+          <a href="#">Home</a>
+          <a href="#">Pages</a>
+          <a href="#">Features</a>
+          <a href="#">Extensions</a>
+          <a href="#">Tutorials</a>
+          <a href="#">Contact us</a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-skype"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </nav>
+
+        <!-- Mmenu button -->
+        <button id="my-icon" class="hamburger hamburger--arrow" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <!-- Mmenu -->
+        <nav id="my-menu" hidden>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Extensions</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Contact us</a></li>    
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="heading">
+        <h1>Creatives</h1>
+        <p>Power by PSDfreebies.com</p>
+      </div>
+      <div class="scroll-down">
+        <span>Scroll Down</span>
+        <i class="fa fa-chevron-down"></i>
+      </div>
+    </header>
+  </div>
+  <div id="my-content"></div>
+  <div id="my-footer"></div>
+</div>
+  
 <script src="js/main.js"></script>
 </body>
 </html>

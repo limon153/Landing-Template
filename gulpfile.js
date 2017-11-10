@@ -5,16 +5,21 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   autoprefixer = require('autoprefixer'),
   concat = require('gulp-concat'),
-  uglify = require('gulp-uglify');
+  uglify = require('gulp-uglify'),
+  browserify = require('browserify');
 
 
 var path = {
   src: {
     html: 'src/index.html',
-    css: 'src/css/main.css',
+    css: ['src/css/main.css',
+          'src/css/media.css'],
+    cssLibs: ['src/css/libs/bootstrap*.css',
+              'src/css/libs/jquery.mmenu*.css',
+              'src/css/libs/hamburgers.css'],
     js: 'src/js/main.js',
     libs: [
-      'src/libs/jquery.min.js'
+      'src/libs/jquery.mmenu.all.js'
     ],
     images: 'src/img/**/*.*',
   },
@@ -74,12 +79,12 @@ gulp.task('libs', function () {
 
 gulp.task('scripts', function () {
   return gulp.src(path.src.js)
-    .pipe(gulp.dest(path.build.js))
+    .pipe(gulp.dest(path.build.js));
 });
 
 gulp.task('images', function () {
   return gulp.src(path.src.images)
-    .pipe(gulp.dest(path.build.images))
+    .pipe(gulp.dest(path.build.images));
 });
 
 gulp.task('clean', function (cb) {
@@ -97,6 +102,6 @@ gulp.task('watch',
 
 gulp.task('default', gulp.series(
   'clean',
-  gulp.parallel('images', 'html', 'css', 'scripts'),
+  gulp.parallel('images', 'html', 'css-libs', 'css', 'libs', 'scripts'),
   gulp.parallel('server', 'watch')
 ));

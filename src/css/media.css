@@ -1,0 +1,77 @@
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 28px;
+  }
+  .header .header-top {
+    height: 130px;
+  }
+  .header .header-top .header-logo {
+    width: 100px;
+    left: 50px;
+  }
+  .header .header-top .header-menu a {
+    line-height: 130px;
+  }
+  .header .scroll-down {
+    width: 200px;
+  }
+  .header .header-top .header-menu a {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .header {
+    background-size: cover;
+    & .header-top {
+      height: 80px;
+      & .header-logo {
+        // width: 50px;
+        left: 50px;
+      }
+      & .header-menu {
+        & a:nth-child(2) {
+          margin-left: 10px;
+        }
+        
+      }
+    }
+    
+    & .heading p {
+      letter-spacing: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+  .header .header-top .header-logo {
+    left: 20px;
+    width: 50px;
+  }
+  .header .header-top .header-menu a {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 7px;
+  }
+  .header .heading p {
+    letter-spacing: 7px;
+  }
+  .header .header-top .header-menu {
+    display: none;
+  }
+  .header .header-top button.hamburger {
+    display: block;
+  }
+  .header .scroll-down span {
+    font-size: 1.5rem;
+  }
+
+}
