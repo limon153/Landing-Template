@@ -31,6 +31,7 @@ nav#my-menu {
   background: url(../img/header-bg.jpg) top center no-repeat;
   background-size: 100%;
   display: flex;
+  position: relative;
   // flex-direction: column;
   color: #fff;
   & .header-top {
@@ -121,6 +122,53 @@ nav#my-menu {
       margin-top: 12px;
       border: 1px solid #fff;
       border-radius: 50%;
+    }
+  }
+}
+
+.features-block {
+  width: 100%;
+  background: var(--accent-color);
+  color: #fff;
+  position: relative;
+  & .features-block-logo {
+    position: absolute;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 10rem;
+    opacity: .18;
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    left: 0;
+    right: 0;
+    top: 10px;
+  }
+  & .features-block-header {
+    text-align: center;
+    text-transform: uppercase;
+    // margin-bottom: 100px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-top: 0;
+    padding: 100px;
+  }
+  & .features-container {
+    width: 100%;
+    text-align: center;
+    & .row {
+      justify-content: center;
+    }
+    & .feature-logo {
+      width: 100px;
+    }
+    & .feature-header {
+      text-transform: uppercase;
+    }
+    & .feature {
+      max-width: 40%;
     }
   }
 }

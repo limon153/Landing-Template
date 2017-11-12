@@ -7,7 +7,6 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
-    "browserify": "^14.5.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^7.0.0",
@@ -23,9 +22,5 @@
   "bugs": {
     "url": "https://github.com/limon153/Landing-Template/issues"
   },
-  "homepage": "https://github.com/limon153/Landing-Template#readme",
-  "dependencies": {
-    "jquery": "^3.2.1",
-    "jquery.mmenu": "^6.1.8"
-  }
+  "homepage": "https://github.com/limon153/Landing-Template#readme"
 }

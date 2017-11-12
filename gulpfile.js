@@ -5,8 +5,7 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   autoprefixer = require('autoprefixer'),
   concat = require('gulp-concat'),
-  uglify = require('gulp-uglify'),
-  browserify = require('browserify');
+  uglify = require('gulp-uglify');
 
 
 var path = {

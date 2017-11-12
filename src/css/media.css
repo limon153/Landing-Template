@@ -55,6 +55,9 @@
   .header .header-top .header-menu a {
     padding: 0 10px;
   }
+  .features-block .features-block-logo {
+    top: 30px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -72,6 +75,23 @@
   }
   .header .scroll-down span {
     font-size: 1.5rem;
+  }
+  .features-block {
+    font-size: 1.3rem;
+  }
+
+  .features-block .features-block-header {
+    padding: 50px 0;
+    font-size: 2.5rem;
+  }
+
+  .features-block .features-container .feature-logo {
+    width: 70px;
+  }
+
+  .features-block .features-block-logo {
+    font-size: 11rem;
+    top: 10px;
   }
 
 }
