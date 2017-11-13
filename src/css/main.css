@@ -210,3 +210,37 @@ nav#my-menu {
     background-size: cover;
   }
 }
+
+.blog-block {
+  position: relative;
+  margin-bottom: 60px;
+  & .block-header {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
+  & .blog-block-header {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  & .blog-element {
+    text-align: center;
+    & img {
+      max-width: 200px;
+    }
+    & .blog-header {
+      color: var(--accent-color);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      // font-size: 1rem;
+      margin-bottom: 0;
+    }
+    & .blog-content {
+      font-size: 0.8rem;
+      
+    }
+
+  }
+
+}

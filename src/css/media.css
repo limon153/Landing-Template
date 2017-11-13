@@ -21,6 +21,16 @@
   .block-logo {
     top: -50px;
   }
+  .blog-block .blog-element {
+    & img {
+      min-width: 200px;
+      max-width: none;
+    }
+    & .blog-header {
+      // font-size: 0.7rem; 
+      letter-spacing: 2px;
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -45,6 +55,12 @@
       letter-spacing: 10px;
     }
   }
+
+  .blog-block .blog-element {
+    & img {
+      max-width: 170px;
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -60,6 +76,11 @@
   }
   .block-logo {
     top: 30px;
+  }
+  .blog-block .blog-element .blog-content {
+    max-width: 170px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -115,6 +136,31 @@
   .akita-block .akita-block-element:nth-child(4),
   .akita-block .akita-block-element:first-child {
     padding: 5% 20% 5% 20%;
+  }
+
+  .blog-block {
+    & .block-header {
+      font-size: 4rem;
+    }
+    & .block-logo {
+      font-size: 20rem;
+      top: -25px;
+    }
+    & .blog-block-header {
+      font-size: 2rem;
+    }
+    & .blog-element {
+      & img {
+        max-width: 250px;
+      }
+      & .blog-header {
+        font-size: 2rem;
+      }
+      & .blog-content {
+        max-width: 250px;
+        font-size: 1.8rem;
+      }
+    }
   }
 
 }
