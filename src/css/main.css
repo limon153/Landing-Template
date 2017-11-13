@@ -174,3 +174,39 @@ nav#my-menu {
     }
   }
 }
+
+.akita-block {
+  display: flex;
+  flex-wrap: wrap;
+  & .akita-block-element {
+    width: 50%;
+    padding: 5% 15% 5% 10%;
+    & small {
+      font-size: 0.6rem;
+      & pre {
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+    & h3 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+    }
+    & p {
+      font-size: 0.8rem;
+    }
+  }
+  & .akita-block-element:first-child {
+    background-color: #222;
+    color: #f3f3f3;
+  }
+  & .akita-block-element:nth-child(4) {
+    background-color: #f3f3f3;
+    color: #222;
+    padding-left: 5%;
+    padding-right: 15%px;
+  }
+  & .akita-block-element.has-bg {
+    background-size: cover;
+  }
+}

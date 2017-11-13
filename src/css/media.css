@@ -18,6 +18,9 @@
   .header .header-top .header-menu a {
     padding: 0 30px;
   }
+  .block-logo {
+    top: -50px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -92,6 +95,26 @@
   .block-logo {
     font-size: 11rem;
     top: 10px;
+  }
+  .akita-block .akita-block-element {
+    width: 100%;
+    & small {
+      font-size: 1rem;
+    }
+    & h3 {
+      font-size: 2rem;
+    }
+    & p {
+      font-size: 1.5rem;
+    }
+  }
+  .akita-block .akita-block-element.has-bg {
+    display: none;
+  }
+
+  .akita-block .akita-block-element:nth-child(4),
+  .akita-block .akita-block-element:first-child {
+    padding: 5% 20% 5% 20%;
   }
 
 }
