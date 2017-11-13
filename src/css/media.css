@@ -55,7 +55,7 @@
   .header .header-top .header-menu a {
     padding: 0 10px;
   }
-  .features-block .features-block-logo {
+  .block-logo {
     top: 30px;
   }
 }
@@ -80,7 +80,7 @@
     font-size: 1.3rem;
   }
 
-  .features-block .features-block-header {
+  .block-header {
     padding: 50px 0;
     font-size: 2.5rem;
   }
@@ -89,7 +89,7 @@
     width: 70px;
   }
 
-  .features-block .features-block-logo {
+  .block-logo {
     font-size: 11rem;
     top: 10px;
   }
