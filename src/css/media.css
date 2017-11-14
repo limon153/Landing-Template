@@ -138,6 +138,10 @@
     padding: 5% 20% 5% 20%;
   }
 
+  .block-subheader {
+    font-size: 2rem;
+  }
+
   .blog-block {
     & .block-header {
       font-size: 4rem;
@@ -146,9 +150,7 @@
       font-size: 20rem;
       top: -25px;
     }
-    & .blog-block-header {
-      font-size: 2rem;
-    }
+    
     & .blog-element {
       & img {
         max-width: 250px;
@@ -193,6 +195,29 @@
       & .key-feature-img {
         margin-top: 60px;
         width: 60%;
+      }
+    }
+  }
+
+  .team-block {
+    padding-bottom: 20px;
+    & .block-header {
+      font-size: 4rem;
+    }
+    & .block-logo {
+      font-size: 15rem;
+      top: 0;
+    }
+
+    & .team-element {
+      margin-bottom: 50px;
+      & .name-card {
+        & .name {
+          font-size: 1.5rem;
+        }
+        & .position {
+          font-size: 1.4rem;
+        }
       }
     }
   }
