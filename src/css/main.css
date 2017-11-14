@@ -258,8 +258,53 @@ nav#my-menu {
     }
     & .quick-action-text {
       font-size: 0.9rem;
-
     }
-    
+  }
+}
+
+.key-feature-block {
+  color: #fff;
+  background-size: cover;
+  & .f-container {
+    padding: 50px 0;
+    max-width: 80%;
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    & .key-feature {
+      max-width: 40%;
+      & .key-feature-heading {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+      & .key-feature-text {
+        font-size: 0.8rem;
+        margin-bottom: 50px;
+      }
+      & .key-feature-list {
+        list-style: none;
+        padding-left: 0;
+        & li {
+          width: 80%;
+          display: block;
+          padding: 5px 20px;
+          margin: 10px 0;
+          background-color: var(--accent-color);
+          text-transform: uppercase;
+          font-size: 0.8rem;
+        }
+        & li:nth-child(2) {
+          width: 85%;
+        }
+        & li:nth-child(3) {
+          width: 90%;
+        }
+      }
+    }
+    & .key-feature-img {
+      width: 30%;
+    }
   }
 }

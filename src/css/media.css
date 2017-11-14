@@ -175,4 +175,26 @@
     }
   }
 
+  .key-feature-block {
+    & .f-container {
+      flex-direction: column;
+      & .key-feature {
+        max-width: 80%;
+        & .key-feature-heading {
+          font-size: 4rem;
+        }
+        & .key-feature-text {
+          font-size: 2rem;
+        }
+        & .key-feature-list li {
+          font-size: 1.5rem;
+        }
+      }
+      & .key-feature-img {
+        margin-top: 60px;
+        width: 60%;
+      }
+    }
+  }
+
 }
