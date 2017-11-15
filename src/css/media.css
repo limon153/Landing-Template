@@ -222,4 +222,22 @@
     }
   }
 
+  .contact-block {
+    & .block-header {
+      font-size: 3rem;
+    }
+    & .block-logo {
+      font-size: 20rem;
+      top: -35px;
+    }
+    & .contact-form .row  {
+    
+      justify-content: center;
+      & .text-field {
+        max-width: 80%;
+        font-size: 2rem;
+      }
+    }
+  }
+
 }

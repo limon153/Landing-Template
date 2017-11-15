@@ -345,3 +345,49 @@ nav#my-menu {
     }
   }
 }
+
+.contact-block {
+  position: relative;
+  color: #fff;
+  background-size: cover;
+  padding-bottom: 60px;
+  & .contact-form {
+    // display: flex;
+    // flex-wrap: wrap;
+    // width: 100%;
+    & .row {
+      justify-content: space-between;
+      
+
+    }
+    & .text-field {
+      margin-bottom: 20px;
+      background: none;
+      border: solid 1px #fff;
+      color: #fff;
+      font-size: 0.8em;
+      padding: 12px;
+    }
+    & input::placeholder, & textarea::placeholder {
+      color: #fff;
+    }
+    & input {
+      max-width: 30%;
+    }
+    & textarea {
+      resize: none;
+      font-family: "Open sans", sans-serif;
+      overflow: hidden;
+    }
+    & input[type="submit"] {
+      margin: 0 auto;
+      background-color: var(--accent-color);
+      border: none;
+      text-transform: uppercase;
+      padding: 15px 30px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #fff;
+    }
+  }
+}
